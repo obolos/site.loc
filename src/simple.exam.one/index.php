@@ -38,6 +38,8 @@ function mysort(&$arr){
 $countries = [1 => "Московская область", 2 => "Ярославская область"];
 $city = ["Клин" => 1, "Реутов" => 1, "Ярославль" => 2, "Рябинск" => 2];
 
+$allinone = ["Московская область" => ["Клин","Реутов"], "Ярославская область" => ["Ярославль","Рябинск"]];
+/*
 foreach ($countries as $a => $t){
     echo $t."\n";
    foreach($city as $key => $value){
@@ -45,6 +47,13 @@ foreach ($countries as $a => $t){
            echo $key."\n";
        }
    }
+}*/
+
+foreach($allinone as $key => $value){
+    echo $key."\n";
+    foreach($value as $k => $v){
+        echo $v."\n";
+    }
 
 }
 
